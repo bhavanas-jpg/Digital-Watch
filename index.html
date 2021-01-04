@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Digital Watch App</title>
+     <!--Bootstrap CDN-->
+       <!-- Latest compiled and minified CSS -->
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <!--FontAwesome CDN-->
+       <script src="https://kit.fontawesome.com/9fa96fd4f5.js" crossorigin="anonymous"></script>
+       <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+       <style>
+           .card .card-body{
+               border-radius: 12px;
+               box-shadow: 0 4px 10px black;
+           }
+           @media screen and (max-width:375px){
+            .card .card-body{
+               margin-bottom: 25px !important;
+               padding: 0.25px;
+             }
+             h5{
+               font-size: 20px !important;
+             }
+             
+           }
+       </style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-dark mb-5">
+    <a href="#" class="navbar-brand">Digital Watches</a>
+</nav>
+<!---Range Select-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-3">
+              <div class="card-body bg-success text-white text-center">
+                <h5>Asia/Kolkata</h5>
+                <h4 class="display-4">India</h4>
+                <p id="indian-date">25/04/2020</p>
+                <h5 id="indian-time" class="display-4" >10:00:00 PM</h5>
+              </div>
+          </div>  
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body bg-primary text-white text-center">
+                  <h5>America/New_York</h5>
+                  <h4 class="display-4">USA</h4>
+                  <p id="usa-date">25/04/2020</p>
+                  <h5 id="usa-time" class="display-4" >10:00:00 PM</h5>
+                </div>
+            </div>  
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+                <div class="card-body bg-danger text-white text-center">
+                  <h5>Asia/Shanghai</h5>
+                  <h4 class="display-4">China</h4>
+                  <p id="china-date">25/04/2020</p>
+                  <h5 id="china-time" class="display-4" >10:00:00 PM</h5>
+                </div>
+            </div>  
+          </div>
+    </div>
+   
+</div>
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+ <script src="app.js"></script>  
+ <!-- Popper JS -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
